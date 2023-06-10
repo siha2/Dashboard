@@ -291,3 +291,42 @@ ul {
   background-color: rgb(34 197 94 / 20%);
 }
 /* end targets */
+/* start tickets */
+.tickets .box {
+  border: 1px solid #ccc;
+  width: calc(50% - 10px);
+}
+@media (max-width: 767px) {
+  .tickets .box {
+    width: 100%;
+  }
+}
+/* end tickets */
+/* start latest news */
+.latest-news .news-row:not(:last-of-type) {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+.latest-news .news-row img {
+  width: 100px;
+  border-radius: 6px;
+  margin-right: 15px;
+}
+.latest-news .info {
+  flex-grow: 1;
+}
+.latest-news .info h3 {
+  margin: 0 0 6px;
+  font-size: 16px;
+}
+@media (max-width: 767px) {
+  .latest-news .news-row {
+    display: block;
+  }
+  .latest-news .news-row .label {
+    margin: 10px auto;
+    width: fit-content;
+  }
+}
+/* end latest news */
